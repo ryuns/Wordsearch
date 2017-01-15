@@ -611,10 +611,10 @@ namespace Wordsearch
                         throw new Exception("Please enter 4 numbers seperated by commas.");
                     }
 
-                    if (pPlayerChoiceValues[0] < 0 || pPlayerChoiceValues[0] > pGrids.columns || pPlayerChoiceValues[0] > pGrids.rows || 
-                        pPlayerChoiceValues[1] < 0 || pPlayerChoiceValues[1] > pGrids.columns || pPlayerChoiceValues[1] > pGrids.rows || 
-                        pPlayerChoiceValues[2] < 0 || pPlayerChoiceValues[2] > pGrids.columns || pPlayerChoiceValues[2] > pGrids.rows || 
-                        pPlayerChoiceValues[3] < 0 || pPlayerChoiceValues[3] > pGrids.columns || pPlayerChoiceValues[3] > pGrids.rows)
+                    if (pPlayerChoiceValues[0] < 0 || pPlayerChoiceValues[0] > pGrids.rows || 
+                        pPlayerChoiceValues[1] < 0 || pPlayerChoiceValues[1] > pGrids.columns || 
+                        pPlayerChoiceValues[2] < 0 || pPlayerChoiceValues[2] > pGrids.rows || 
+                        pPlayerChoiceValues[3] < 0 || pPlayerChoiceValues[3] > pGrids.columns)
                     {
                         throw new Exception("Please enter a value within the grid.");
                     }
